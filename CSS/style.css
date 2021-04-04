@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    display: flex;
+    background: rgb(170, 170, 170);
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    min-width: none;
+}
+#header:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#header-img {
+    width: 60px;
+    height: 60px;
+}
+
+#header-img:hover {
+    transform: scale(1.2); 
+}
+
+#form {
+    text-align: center;
+    padding-top: 120px;
+    color:#ae52fa;
+  
+}
+#form h2{
+    padding-bottom: 40px;
+}
+
+#email {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #ae52fa;
+    box-sizing: border-box;
+
+}
+
+#submit {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #c48af3;
+    
+}
+#email, 
+#submit:focus{
+    outline: none;
+}
+
+#submit:hover {
+    background-color:#8957b3;
+    
+}
+#nav-bar {
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.nav-link li {
+    display: inline-block;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0 20px 0 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.nav-link a, .nav-link a:visited {
+    color: #363636;
+}
+
+.nav-link a.current, .nav-link a:hover{
+    color:#ae52fa;
+}
+
+.nav-link a:before,
+.nav-link a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ae52fa;
+  transition: .8s;
+}
+
+.nav-link a:hover:before, .nav-link .current:before {left: 0;}
+.nav-link a:hover:after, .nav-link .current:after {right: 0;}   
+@media (max-width: 780px) {
+.nav-link {
+    padding-top: 0;
+}
+.nav-link li {
+    display: block;}
+
+.nav-link li:after {
+    content: none;
+}
+.nav-link a {
+    padding: 25px 0 20px; 
+    margin: 0 30px;
+}}
+.company-text {
+    padding-top: 60px;
+    text-align: center;
+    color:#ae52fa;
+    font-size: 30px;
+
+}
+.about-company{
+    margin: 60px;
+    max-width: 1300px;
+}
+
+.img{
+    display: flex;
+    width: 100px;
+    height:100px;
+}
+.info{
+    position: relative;
+    margin-left: 180px;
+    bottom: 90px;
+    z-index: -1;
+}
+
+#video {
+    display: flex;
+    max-width: 560px;
+    width: 100%;
+    margin: 0px auto;
+    
+    
+}
+
+.clothes {
+    display: flex;
+}
+.our-clothes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    max-width: 450px;
+    margin: 20px;
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 10px; 
+}
+
+.our-clothes h2 {
+    color:#ae52fa;
+    background-color: rgb(180, 175, 175);
+    width:  100%;
+}
+.our-clothes img {
+    display: flex;
+    width: 200px;
+    height:200px;
+}
+#contact{
+    display: flex;
+    padding: 20px;
+
+}
+
+#contact iframe{
+    width: 200%;
+    margin-right: 40px;
+    
+}
+#contact li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    color: #fdfdfd;
+    font-size: 18px; 
+    color: #fdfdfd;
+    font-family: 'Ubuntu Condensed', sans-serif;
+   
+}
+#contact ul {  
+    padding: 20px;  
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+}
+#contact a {
+    text-decoration: none;
+    font-size: 18px; 
+    color: #fdfdfd;
+    padding: 20px;
+}
+
+.footer-container {
+    text-align: right;
+    padding: 15px;
+    margin-top: 55px;  
+    background-color: rgb(129, 129, 129);
+    width: 100%;
+}
+
+.footer-data li {
+    display: inline;  
+    margin:20px;
+}
+.footer-data a{
+    text-decoration: none;
+    font-size: 18px; 
+    color: #fdfdfd;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.footer-link:hover{
+    color:#000000;
+}
+.footer-info{
+    color: #bebebe;
+    margin:0 20px;
+    padding-top: 10px;
+}
